@@ -1,0 +1,17 @@
+# data
+DATA_LOCATION="/home/transmart/datasets/EtriksGSE43696/annotation"
+SOURCE_FILENAME="GPL6480.txt"
+
+# info
+ANNOTATION_TITLE="Agilent-014850 Whole Human Genome Microarray 4x44K G4112F (Probe Name Version)"
+GPL_ID="GPL6480"
+
+# col numbers
+PROBE_COL=2
+GENE_SYMBOL_COL=3
+GENE_ID_COL=4
+ORGANISM_COL=5
+
+# header?
+SKIP_ROWS=0
+

@@ -1,0 +1,4 @@
+# kettle
+KITCHEN="/home/transmart/transmart/transmart-data/env/data-integration/kitchen.sh"
+KETTLE_JOBS_PSQL="/home/transmart/transmart/tranSMART-ETL/Kettle/postgres/Kettle-ETL/"
+

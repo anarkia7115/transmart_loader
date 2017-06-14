@@ -1,0 +1,13 @@
+# data
+DATA_LOCATION="/home/transmart/datasets/EtriksGSE43696/expression"
+DATA_FILE_PREFIX="ExpRawData"
+MAP_FILENAME="GSE43696_sample_subject_mapping.txt"
+
+# job_detail
+STUDY_ID="GSE43696_ETRIKS"
+TOP_NODE="\\eTRIKS Asthma\\Milosevic(2013) GSE43696"
+SOURCE_CD="GEO"
+
+# security
+SECURITY_REQUIRED="N"
+

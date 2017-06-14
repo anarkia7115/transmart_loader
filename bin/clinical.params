@@ -1,0 +1,15 @@
+# data
+DATA_LOCATION="/home/transmart/datasets/EtriksGSE43696/clinical"
+COLUMN_MAP_FILE="GSE43696_Clinical_mapping.txt"
+
+# job_detail
+STUDY_ID="GSE43696_ETRIKS"
+TOP_NODE="\\eTRIKS Asthma\\Milosevic(2013) GSE43696"
+
+# security
+SECURITY_REQUIRED="N"
+
+# not using
+WORD_MAP_FILE=x
+RECORD_EXCLUSION_FILE=x
+
