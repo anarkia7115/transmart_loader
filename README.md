@@ -7,7 +7,7 @@ put _data file_ and _map file_
 on a server location where you can find.
 2. Change and save _clinical.params_ file. 
 (Parameters definition list in _Params List_ section)
-3. Run
+3. Load clinical data.
 ```shell
 ./load_clinical.sh clinical.params
 ```
@@ -15,16 +15,16 @@ on a server location where you can find.
 ```shell
 ./check_gpl.sh
 ```
-5. If gpl already in the list, goto step _9_
+5. If gpl already in the list, skip next 3 steps.
 6. (Optional) Download annotation file from 
-[transmart dataset](library.transmartfoundation.org/datasets/)
+[transmart dataset](http://library.transmartfoundation.org/datasets/)
 7. (Optional) Change and save _annoataion.params_ file.
-8. (Optional) Run
+8. (Optional) Load annotation data.
 ```shell
 ./load_annotation.sh annotation.params
 ```
 9. Change and save _expression.params_ file
-10. Run
+10. Load expression data.
 ```shell
 ./load_expression.sh expression.params
 ```
@@ -62,15 +62,15 @@ SECURITY_REQUIRED="N"
 WORD_MAP_FILE=x  
 RECORD_EXCLUSION_FILE=x  
 ```
-| Field Name | Meaning |
-| - | - |
-| DATA_LOCATION   | Location of clinical data folder. |
-| COLUMN_MAP_FILE | Map file. |
-| STUDY_ID        | Study id. |
-| TOP_NODE        | Top node. <br> (TOP_NODE=\\\TOP_NODE_PREFIX\\\STUDY_NAME) |
-| SECURITY_REQUIRED     | Is private? |
-| WORD_MAP_FILE         | Word map file. |
-| RECORD_EXCLUSION_FILE | Record exclusion file. |
+| Field Name            | Meaning                                                   |
+| --------------------- | --------------------------------------------------------- |
+| DATA_LOCATION         | Location of clinical data folder.                         |
+| COLUMN_MAP_FILE       | Map file.                                                 |
+| STUDY_ID              | Study id.                                                 |
+| TOP_NODE              | Top node. <br> (TOP_NODE=\\\TOP_NODE_PREFIX\\\STUDY_NAME) |
+| SECURITY_REQUIRED     | Is private?                                               |
+| WORD_MAP_FILE         | Word map file.                                            |
+| RECORD_EXCLUSION_FILE | Record exclusion file.                                    |
 
 ### expression.params
 ```shell
@@ -91,15 +91,15 @@ SOURCE_CD=""
 SECURITY_REQUIRED="N"
 
 ```
-| Field Name | Meaning |
-| - | - |
-| DATA_LOCATION   | Location of clinical data folder. |
-| DATA_FILE_PREFIX | Prefix of data file. |
-| MAP_FILENAME | Map file name. |
-| STUDY_ID        | Study id. |
-| TOP_NODE        | Top node. <br> (TOP_NODE=\\\TOP_NODE_PREFIX\\\STUDY_NAME) |
-| SOURCE_CD | Source to include. <br> Corresponding to SOURCE_CD filed in map file. <br> Default value: STD |
-| SECURITY_REQUIRED     | Is private? |
+| Field Name 		| Meaning |
+| --- 			| --- |
+| DATA_LOCATION   	| Location of clinical data folder. |
+| DATA_FILE_PREFIX 	| Prefix of data file. |
+| MAP_FILENAME 		| Map file name. |
+| STUDY_ID        	| Study id. |
+| TOP_NODE        	| Top node. <br> (TOP_NODE=\\\TOP_NODE_PREFIX\\\STUDY_NAME) |
+| SOURCE_CD 		| Source to include. <br> Corresponding to SOURCE_CD filed in map file. <br> Default value: STD |
+| SECURITY_REQUIRED  	| Is private? |
 
 ### annotation.params
 ``` shell
@@ -121,14 +121,14 @@ ORGANISM_COL=5
 SKIP_ROWS=0
 
 ```
-| Field Name | Meaning |
-| - | - |
+| Field Name 	   | Meaning |
+| --- 		   | --- |
 | DATA_LOCATION    | Location of annotation data folder. |
 | SOURCE_FILENAME  | Data file name. |
 | ANNOTATION_TITLE | Title. (copy from xz) |
-| GPL_ID | GPL id. |
-| PROBE_COL | Column index of the probe ID. |
-| GENE_SYMBOL_COL | Column index of the gene symbol. |
-| GENE_ID_COL | Column index of the gene ID. |
-| ORGANISM_COL | Column index of the organism. |
-| SKIP_ROWS | Number of rows to skip. <br>Note: This script does not assume a header row is present. If a header row exists, this should be set to one. |
+| GPL_ID 	   | GPL id. |
+| PROBE_COL 	   | Column index of the probe ID. |
+| GENE_SYMBOL_COL  | Column index of the gene symbol. |
+| GENE_ID_COL 	   | Column index of the gene ID. |
+| ORGANISM_COL 	   | Column index of the organism. |
+| SKIP_ROWS 	   | Number of rows to skip. <br>Note: This script does not assume a header row is present. <br>If a header row exists, this should be set to one. |
