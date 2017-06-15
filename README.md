@@ -2,34 +2,33 @@
 
 ## How To
 
-* Run Example
-    1. Download/Create clinical data, 
-    put _data file_ and _map file_ 
-    on a server location where you can find.
-    2. Change and save _clinical.params_ file. 
-    (Parameters definition list in _Params List_ section)
-    3. Run
-    ```shell
-    ./load_clinical.sh clinical.params
-    ```
-    4. Check if gpl is already in tranSMART
-    ```shell
-    ./check_gpl.sh
-    ```
-    5. If gpl already in the list, goto step _ix_
-    6. (Optional) Download annotation file from 
-    [transmart dataset](library.transmartfoundation.org/datasets/)
-    7. (Optional) Change and save _annoataion.params_ file.
-    8. (Optional) Run
-    ```shell
-    ./load_annotation.sh annotation.params
-    ```
-    9. Change and save _expression.params_ file
-    10. Run
-    ```shell
-    ./load_expression.sh expression.params
-    ```
-    Done!
+1. Download/Create clinical data, 
+put _data file_ and _map file_ 
+on a server location where you can find.
+2. Change and save _clinical.params_ file. 
+(Parameters definition list in _Params List_ section)
+3. Run
+```shell
+./load_clinical.sh clinical.params
+```
+4. Check if gpl is already in tranSMART
+```shell
+./check_gpl.sh
+```
+5. If gpl already in the list, goto step _9_
+6. (Optional) Download annotation file from 
+[transmart dataset](library.transmartfoundation.org/datasets/)
+7. (Optional) Change and save _annoataion.params_ file.
+8. (Optional) Run
+```shell
+./load_annotation.sh annotation.params
+```
+9. Change and save _expression.params_ file
+10. Run
+```shell
+./load_expression.sh expression.params
+```
+Done!
 
 
 ## Running Scripts
