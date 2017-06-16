@@ -1,10 +1,10 @@
 # data
-DATA_LOCATION="/home/transmart/datasets/EtriksGSE43696/clinical"
-COLUMN_MAP_FILE="GSE43696_Clinical_mapping.txt"
+DATA_LOCATION="/home/transmart/datasets/RanchoGSE4698/clinical"
+COLUMN_MAP_FILE="Acute_Lymphoblastic_Leukemia_Kirschner_Schwabe_GSE4698_Mapping_File.txt"
 
-# job_detail
-STUDY_ID="GSE43696_ETRIKS"
-TOP_NODE="\\eTRIKS Asthma\\Milosevic(2013) GSE43696"
+# info
+STUDY_ID="GSE4698"
+TOP_NODE="\\Public Studies\\Acute Lymphoblastic Leukemia_Kirschner_Schwabe_GSE4698"
 
 # security
 SECURITY_REQUIRED="N"

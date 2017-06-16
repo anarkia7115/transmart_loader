@@ -135,3 +135,13 @@ SKIP_ROWS=0
 | GENE_ID_COL 		| Column index of the gene ID. |
 | ORGANISM_COL 		| Column index of the organism. |
 | SKIP_ROWS 		| Number of rows to skip. <br>Note: This script does not assume a header row is present. <br>If a header row exists, this should be set to one. |
+
+## UI Explain
+* TOP_NODE_PREFIX  
+![top node prefix](https://github.com/anarkia7115/transmart_loader/blob/master/images/top_node_prefix.png)
+* STUDY_NAME  
+![study name](https://github.com/anarkia7115/transmart_loader/blob/master/images/STUDY_NAME.png)
+* TOP_NODE (TOP_NODE=\\\TOP_NODE_PREFIX\\\STUDY_NAME)  
+![top node](https://github.com/anarkia7115/transmart_loader/blob/master/images/top_node.png)
+* CATEGORY_CD  
+![category cd](https://github.com/anarkia7115/transmart_loader/blob/master/images/category_cd.png)

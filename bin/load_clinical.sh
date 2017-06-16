@@ -37,6 +37,8 @@ fi
 
 ################## user input end ##################
 
+echo "start kettle..."
+
 # kettle job
 CLINICAL_JOB='create_clinical_data.kjb'
 #CLINICAL_JOB='increment_clinical_data.kjb'

@@ -37,6 +37,8 @@ fi
 
 ################## user input end ##################
 
+echo "start kettle..."
+
 # kettle job
 ANNOTATION_JOB='load_annotation.kjb'
 

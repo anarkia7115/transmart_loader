@@ -1,12 +1,12 @@
 # data
-DATA_LOCATION="/home/transmart/datasets/EtriksGSE43696/expression"
-DATA_FILE_PREFIX="ExpRawData"
-MAP_FILENAME="GSE43696_sample_subject_mapping.txt"
+DATA_LOCATION="/home/transmart/datasets/RanchoGSE4698/expression"
+DATA_FILE_PREFIX="Acute_Lymphoblastic_Leukemia_Kirschner_Schwabe_GSE4698_Gene_Expression_Data"
+MAP_FILENAME="Acute_Lymphoblastic_Leukemia_Kirschner_Schwabe_GSE4698_Subject_Sample_Mapping_File.txt"
 
-# job_detail
-STUDY_ID="GSE43696_ETRIKS"
-TOP_NODE="\\eTRIKS Asthma\\Milosevic(2013) GSE43696"
-SOURCE_CD="GEO"
+# info
+STUDY_ID="GSE4698"
+TOP_NODE="\\Public Studies\\Acute Lymphoblastic Leukemia_Kirschner_Schwabe_GSE4698"
+SOURCE_CD=""
 
 # security
 SECURITY_REQUIRED="N"

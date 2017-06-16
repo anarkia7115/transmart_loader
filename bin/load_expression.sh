@@ -21,6 +21,12 @@ else
   exit 1
 fi
 
+# check source cd
+if [ -z "$SOURCE_CD" ]
+then
+  SOURCE_CD="STD"
+fi
+
 ## data
 #DATA_LOCATION="/home/transmart/datasets/EtriksGSE43696/expression"
 #DATA_FILE_PREFIX="ExpRawData"
@@ -35,6 +41,8 @@ fi
 #SOURCE_CD="GEO"
 
 ################## user input end ##################
+
+echo "start kettle..."
 
 # kettle job
 EXPRESSION_JOB='load_gene_expression_data.kjb'
