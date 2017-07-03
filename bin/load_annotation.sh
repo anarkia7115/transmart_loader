@@ -44,6 +44,7 @@ ANNOTATION_JOB='load_annotation.kjb'
 
 $KITCHEN -norep=Y                                               \
          -file=$KETTLE_JOBS_PSQL/$ANNOTATION_JOB                  \
+	 -level=Debug \
          -log=logs/load_annotation_data_$(date +"%Y%m%d%H%M").log \
 	 -param:DATA_SOURCE="$DATA_SOURCE" \
 	 -param:EMBEDDED_GENE_TABLE="$EMBEDDED_GENE_TABLE" \

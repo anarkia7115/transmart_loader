@@ -51,6 +51,7 @@ EXPRESSION_JOB='load_gene_expression_data.kjb'
 $KITCHEN -norep=Y                                          \
   -file=$KETTLE_JOBS_PSQL/$EXPRESSION_JOB		   \
   -log=logs/load_expression_data_$(date +"%Y%m%d%H%M").log \
+  -level=Debug \
   -param:DATA_FILE_PREFIX="$DATA_FILE_PREFIX"              \
   -param:DATA_LOCATION="$DATA_LOCATION"                    \
   -param:DATA_TYPE="$DATA_TYPE"                            \

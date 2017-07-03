@@ -45,6 +45,7 @@ CLINICAL_JOB='create_clinical_data.kjb'
 
 $KITCHEN -norep=Y                                               \
          -file=$KETTLE_JOBS_PSQL/$CLINICAL_JOB                  \
+	 -level=Debug \
          -log=logs/load_clinical_data_$(date +"%Y%m%d%H%M").log \
          -param:COLUMN_MAP_FILE="$COLUMN_MAP_FILE"              \
          -param:DATA_LOCATION="$DATA_LOCATION"                  \
